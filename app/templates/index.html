@@ -13,7 +13,7 @@
    </head>
     
  <body>
-    
+    <center>
 <form class="form-inline">
   <div class="form-group">
     <input type="number" id="number1" >
@@ -32,10 +32,9 @@
     <button type="submit">Calculate!</button>
      
      </form>
-    
+     </center>
 <br>
-     
-      <div id="successAlert" class="alert alert-success" role="alert" ></div>
+   
     
      
 <script type="text/javascript">
@@ -46,7 +45,7 @@
                 input1: $('#number1').val(),
                 input2: $('#number2').val(),
                 operations: $('#operations').val()
-                result
+                
             },
             type : 'POST',
             url : '/calculate'

@@ -15,8 +15,10 @@ def main():
 def calculateNum():
      firstnum=int(request.form['input1'])
      secondnum=int(request.form['input2'])
-     operations=int(request.form['operations'])  
+     operations=int(request.form['operations'])
+     result=0;
      if operations==1:
+        result=firstnum+secondnum
         return jsonify({'input1':result})
      elif operations==2:
         result=firstnum-secondnum

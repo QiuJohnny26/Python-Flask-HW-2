@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+     <title>Calculator Flask App</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+     <style type ="text/css">
+         *{
+             font-family: serif;
+         }
+     </style>
+    
+   </head>
+    
+ <body>
+    
+<form class="form-inline">
+  <div class="form-group">
+    <input type="number" id="number1" >
+  </div>
+  <div class="form-group">
+    <input type="number" id="number2">
+  </div>
+  <div class="form-group">
+    <select class="ops" id="operations">
+      <option value="1" selected>+</option>
+      <option value="2">-</option>
+      <option value="3">/</option>
+      <option value="4">*</option>
+    </select>
+     </div>
+    <button type="submit">Calculate!</button>
+     
+     </form>
+    
+<br>
+     
+      <div id="successAlert" class="alert alert-success" role="alert" ></div>
+    
+     
+<script type="text/javascript">
+    $('form').on('submit',function(event){
+        
+        $.ajax({
+            data:{
+                input1: $('#number1').val(),
+                input2: $('#number2').val(),
+                operations: $('#operations').val()
+                result
+            },
+            type : 'POST',
+            url : '/calculate'
+        })
+       .done(function(data){
+            alert(data.input1);
+        })
+        
+        
+    
+    
+        
+        event.preventDefault();
+        
+    });
+     
+
+     </script>
+     
+
+
+    
+ </body>
+ </html>

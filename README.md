@@ -16,9 +16,9 @@ How To Run:
 
 
 
-Steps:
-After local server is up and running
-1.Go to http://localhost:5000/
-2.UI will have 2 input fields where you enter the first number , then second number , and select the operation.
-3.Answer will be prompted
-4.SCREENSHOTS ARE PROVIDED
+Steps:</br>
+After local server is up and running</br>
+1.Go to http://localhost:5000/</br>
+2.UI will have 2 input fields where you enter the first number , then second number , and select the operation.</br>
+3.Answer will be prompted</br>
+4.SCREENSHOTS ARE PROVIDED</br>
